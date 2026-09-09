@@ -1,0 +1,13 @@
+name = "GottschCore"
+filename = "gottschcore-neoforge-1.21.1-2.6.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8f4b4fdb5624ce71ef36810607c8251874024a9d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7907463
+project-id = 272450

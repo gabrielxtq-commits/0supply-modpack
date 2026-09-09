@@ -1,0 +1,6 @@
+#Require Atlases to use Waystones.
+#When true (default), right-clicking a waystone without a Map Atlas will NOT open the
+#waystone teleport menu. Players teleport only from a waystone that has been registered as a
+#marker inside a Map Atlas (right-click the waystone while holding an atlas to toggle the marker).
+#When false, waystones behave normally: right-clicking opens the vanilla waystone menu.
+requireAtlasToUseWaystones = true

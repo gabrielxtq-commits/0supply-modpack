@@ -1,0 +1,13 @@
+name = "Drit: Redstone Edition"
+filename = "drit-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6096e1db48a2647c015b0a36a507fe79ab116cfc"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8273403
+project-id = 1183266

@@ -1,0 +1,14 @@
+#Ativa ou desativa a economia de Guildas (requer FTB Teams).
+enabled = true
+#Permite que jogadores definam o Cofre da Guilda como conta principal (destino do excedente da Carteira).
+allowGuildVaultLink = true
+#Se falso, apenas Oficiais e o Lider da Guilda podem sacar do Cofre da Guilda.
+membersCanWithdraw = false
+#Quantidade maxima de Cofres que uma Guilda pode reivindicar.
+# Default: 1
+# Range: 1 ~ 10
+maxVaultsPerGuild = 1
+#Distancia maxima (em blocos) para depositar/sacar/consultar o Cofre da Guilda.
+# Default: 6.0
+# Range: 1.0 ~ 64.0
+interactionDistance = 6.0

@@ -1,0 +1,18 @@
+#Ativa ou desativa a exigencia de /login e /register.
+enabled = true
+#Tempo, em segundos, que o jogador tem para se registrar/logar antes de ser expulso.
+# Default: 60
+# Range: 5 ~ 600
+loginTimeoutSeconds = 60
+#Tamanho minimo exigido para a senha.
+# Default: 4
+# Range: 1 ~ 64
+minPasswordLength = 4
+#Quantidade de tentativas de senha erradas antes de expulsar o jogador.
+# Default: 3
+# Range: 1 ~ 20
+maxLoginAttempts = 3
+#Impede o jogador de se mover enquanto nao autenticado (teleporta de volta a cada tick).
+freezeMovement = true
+#Torna o jogador imune a dano (recebido e causado) enquanto nao autenticado.
+invulnerableWhilePending = true

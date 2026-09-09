@@ -1,0 +1,26 @@
+#Ativa ou desativa o Cofre Pessoal.
+enabled = true
+#Quantidade maxima de Cofres que um jogador pode reivindicar.
+# Default: 1
+# Range: 1 ~ 10
+maxVaultsPerPlayer = 1
+#Permite que o excedente da Carteira seja enviado automaticamente ao Cofre do jogador.
+allowAutoDeposit = true
+#Distancia maxima (em blocos) para depositar/sacar/consultar o Cofre.
+# Default: 6.0
+# Range: 1.0 ~ 64.0
+interactionDistance = 6.0
+#Permite que jogadores invadam o Cofre de outros jogadores usando o Pe de Cabra.
+allowRaids = true
+#Chance (0.0 a 1.0) de uma tentativa de invasao ter sucesso.
+# Default: 0.35
+# Range: 0.0 ~ 1.0
+raidSuccessChance = 0.35
+#Porcentagem (0.0 a 1.0) do saldo do Cofre roubada em uma invasao bem-sucedida.
+# Default: 0.25
+# Range: 0.0 ~ 1.0
+raidStealPercent = 0.25
+#Tempo minimo, em segundos, entre invasoes ao mesmo Cofre.
+# Default: 600
+# Range: > 0
+raidCooldownSeconds = 600

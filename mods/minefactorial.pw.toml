@@ -1,0 +1,13 @@
+name = "MineFactorial"
+filename = "minefactorial-1.1.3+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "16f525c9dae043c2fd54806257b7a530cdda9901"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6028292
+project-id = 1144883

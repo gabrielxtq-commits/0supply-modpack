@@ -1,0 +1,17 @@
+#Agritech Settings
+[agritech]
+
+	#Planter Configuration
+	[agritech.planter]
+		#Base processing time (ticks)
+		# Default: 1200
+		# Range: 1 ~ 72000
+		base_processing_time = 1200
+		#Speed multiplier applied when a cloche is attached to a planter
+		# Default: 1.15
+		# Range: 0.1 ~ 10.0
+		cloche_speed_multiplier = 1.15
+		#Yield multiplier applied when a cloche is attached to a planter
+		# Default: 1.1
+		# Range: 0.1 ~ 10.0
+		cloche_yield_multiplier = 1.1

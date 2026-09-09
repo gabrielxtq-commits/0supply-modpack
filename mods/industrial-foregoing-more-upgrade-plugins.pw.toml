@@ -1,0 +1,13 @@
+name = "Industrial Foregoing：More Upgrade Plugins"
+filename = "ifmup-1.0.1-mc1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8628b697335920a3dda823b13f871182b539b1b6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8067818
+project-id = 1512810

@@ -1,0 +1,13 @@
+name = "Legendary Monsters"
+filename = "legendary_monsters-2.1.21 MC 1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "048e8de72c99a7d22d7fbbabaddf55d1fd37e1b7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8436680
+project-id = 944035

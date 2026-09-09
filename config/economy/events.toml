@@ -1,0 +1,12 @@
+#Ativa ou desativa os Eventos Economicos.
+enabled = true
+#Se verdadeiro, o servidor inicia automaticamente um evento periodico quando nenhum estiver ativo.
+automaticEvents = false
+#Intervalo, em horas, entre eventos automaticos (quando automaticEvents = true).
+# Default: 168
+# Range: 1 ~ 720
+automaticIntervalHours = 168
+#Permite que eventos exijam uma taxa de inscricao (Money Sink).
+allowEntryFee = true
+#Envia um anuncio global no chat quando um evento comeca ou termina.
+announceGlobal = true

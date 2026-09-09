@@ -1,0 +1,13 @@
+name = "Angel Extra Utilities"
+filename = "angel_utilities-1.0.9-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "91a35988dcb991ac544a6a6afd6babefb613d02f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6976437
+project-id = 1338772

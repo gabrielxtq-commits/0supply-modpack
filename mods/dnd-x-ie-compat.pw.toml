@@ -1,0 +1,13 @@
+name = "DnDesires & IEngineering Compat"
+filename = "DnDesires-IE-Compat-1.21.1-1.0.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5479969918f36ec1ed70a8c1bac5b3e017301e59"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8248334
+project-id = 1575433

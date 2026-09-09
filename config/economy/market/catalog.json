@@ -1,0 +1,164 @@
+{
+  "categories": [
+    {
+      "id": "create",
+      "displayName": "C R E A T E"
+    },
+    {
+      "id": "evilcraft",
+      "displayName": "E V I L   C R A F T"
+    },
+    {
+      "id": "artefatcs",
+      "displayName": "A R T E F A C T S"
+    }
+  ],
+  "items": [
+    {
+      "itemId": "create:extendo_grip",
+      "category": "create",
+      "rarity": "COMMON",
+      "weight": 100,
+      "priceMin": 0,
+      "priceMax": 0,
+      "stockMin": 1,
+      "stockMax": 1,
+      "tags": [],
+      "blacklisted": false
+    },
+    {
+      "itemId": "create:wand_of_symmetry",
+      "category": "create",
+      "rarity": "COMMON",
+      "weight": 1,
+      "priceMin": 0,
+      "priceMax": 0,
+      "stockMin": 1,
+      "stockMax": 1,
+      "tags": [],
+      "blacklisted": false
+    },
+    {
+      "itemId": "create:potato_cannon",
+      "category": "create",
+      "rarity": "COMMON",
+      "weight": 1,
+      "priceMin": 0,
+      "priceMax": 0,
+      "stockMin": 1,
+      "stockMax": 1,
+      "tags": [],
+      "blacklisted": false
+    },
+    {
+      "itemId": "create:blaze_burner",
+      "category": "create",
+      "rarity": "COMMON",
+      "weight": 2,
+      "priceMin": 0,
+      "priceMax": 0,
+      "stockMin": 1,
+      "stockMax": 1,
+      "tags": [],
+      "blacklisted": false
+    },
+    {
+      "itemId": "evilcraft:vengeance_pickaxe",
+      "category": "evilcraft",
+      "rarity": "COMMON",
+      "weight": 100,
+      "priceMin": 0,
+      "priceMax": 0,
+      "stockMin": 1,
+      "stockMax": 1,
+      "tags": [],
+      "blacklisted": false
+    },
+    {
+      "itemId": "evilcraft:necromancer_staff",
+      "category": "evilcraft",
+      "rarity": "COMMON",
+      "weight": 100,
+      "priceMin": 0,
+      "priceMax": 0,
+      "stockMin": 1,
+      "stockMax": 1,
+      "tags": [],
+      "blacklisted": false
+    },
+    {
+      "itemId": "evilcraft:box_of_eternal_closure",
+      "category": "evilcraft",
+      "rarity": "COMMON",
+      "weight": 100,
+      "priceMin": 0,
+      "priceMax": 0,
+      "stockMin": 1,
+      "stockMax": 1,
+      "tags": [],
+      "blacklisted": false
+    },
+    {
+      "itemId": "evilcraft:darkened_apple",
+      "category": "evilcraft",
+      "rarity": "COMMON",
+      "weight": 100,
+      "priceMin": 0,
+      "priceMax": 0,
+      "stockMin": 1,
+      "stockMax": 1,
+      "tags": [],
+      "blacklisted": false
+    },
+    {
+      "itemId": "relics:bastion_ring",
+      "category": "artefatcs",
+      "rarity": "COMMON",
+      "weight": 100,
+      "priceMin": 0,
+      "priceMax": 0,
+      "stockMin": 1,
+      "stockMax": 1,
+      "tags": [],
+      "blacklisted": false
+    },
+    {
+      "itemId": "relics:holy_locket",
+      "category": "artefatcs",
+      "rarity": "COMMON",
+      "weight": 100,
+      "priceMin": 0,
+      "priceMax": 0,
+      "stockMin": 1,
+      "stockMax": 1,
+      "tags": [],
+      "blacklisted": false
+    },
+    {
+      "itemId": "artifacts:crystal_heart",
+      "category": "artefatcs",
+      "rarity": "COMMON",
+      "weight": 100,
+      "priceMin": 0,
+      "priceMax": 0,
+      "stockMin": 1,
+      "stockMax": 1,
+      "tags": [],
+      "blacklisted": false
+    },
+    {
+      "itemId": "artifacts:kitty_slippers",
+      "category": "artefatcs",
+      "rarity": "COMMON",
+      "weight": 100,
+      "priceMin": 0,
+      "priceMax": 0,
+      "stockMin": 1,
+      "stockMax": 1,
+      "tags": [],
+      "blacklisted": false
+    }
+  ],
+  "blacklistedTags": [],
+  "blacklistedMods": []
+}

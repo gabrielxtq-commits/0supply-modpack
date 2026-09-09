@@ -1,0 +1,37 @@
+[blockHealth]
+	#Fallback HP for any reinforced block BlockHealthResolver couldn't compute a baseline for (should be rare -- effectively everything gets a computed value, see blockHealthOverrides below), and the base value that computed baseline formula is built on top of. Deliberately high (2026-08-16 balancing pass): Gabriel wants raids to be slow/effortful, not quick.
+	# Default: 25
+	# Range: > 1
+	baseBlockHealth = 25
+	#Per-block HP overrides, one entry per line, format "modid:block_id=hp" (e.g. "securitycraft:reinforced_obsidian=250"), taking priority over the computed baseline. Empty by default (2026-08-16): all ~517 reinforced blocks (confirmed count, not the ~55-58 Fase 0 originally guessed) get an automatic, differentiated HP value computed by BlockHealthResolver from each block's real vanilla hardness/resistance -- see that class for the exact formula. This list is for hand-tuning specific blocks that feel wrong after field-testing with a real cannon, not for covering the whole roster by hand. Unknown block ids are logged and ignored, not an error.
+	blockHealthOverrides = []
+	#Fixed HP damage dealt per explosion that reaches a reinforced block.
+	# Default: 1
+	# Range: > 1
+	damagePerExplosion = 1
+	#Explosion resistance every reinforced block reports to the game's blast raycast, same value regardless of material -- this is a different knob from blockHealthOverrides above. It's NOT how much damage a hit deals (see damagePerExplosion) or how many hits a block survives (see baseBlockHealth/blockHealthOverrides) -- it only controls whether TNT's blast ray reaches the block at all, and needs to stay low for every block to keep working correctly. Some SecurityCraft reinforced blocks wrap vanilla materials with very high vanilla resistance (e.g. obsidian = 1200), way above what any normal TNT blast can penetrate, which is why this can't just reuse the wrapped vanilla block's own resistance -- keep this one uniform even after tuning per-block HP above.
+	# Default: 0.0
+	# Range: 0.0 ~ 100.0
+	blastRaycastResistance = 0.0
+
+[tieredTnt]
+	#How much farther/faster the Long-Range TNT flies when launched by another explosion (e.g. a cannon's loading charge), as a multiplier on the normal knockback. 1.0 = same as regular TNT.
+	# Default: 2.0
+	# Range: 0.1 ~ 20.0
+	longRangeTntKnockbackMultiplier = 2.0
+	#Extra HP damage the High-Damage TNT deals to reinforced blocks, added on top of damagePerExplosion above. Raised alongside baseBlockHealth in the 2026-08-16 balancing pass -- at +2 against 25+ HP blocks the bonus was barely noticeable; +6 (5 dmg/hit vs. 1) makes this tier feel like a real specialized choice again.
+	# Default: 6
+	# Range: > 0
+	highDamageTntBonusDamage = 6
+	#How much bigger the Wide-Area TNT's blast radius is, as a multiplier on regular TNT's radius. 1.0 = same as regular TNT.
+	# Default: 1.5
+	# Range: 1.0 ~ 10.0
+	wideAreaTntRadiusMultiplier = 1.5
+
+[protection]
+	#Reinforced blocks owned by one of these player UUIDs stay 100% unbreakable, no HP loss at all, checked before any damage is applied. This is Fase 5 of the scope doc's protection list -- not needed for spawn on Gabriel's server specifically (that's covered by FTB's own claim protection, and spawn won't have SecurityCraft blocks anyway), but still here for protecting specific admin/staff bases elsewhere on the map if ever needed. Empty by default -- an empty list here means no owner-based protection at all, not an error.
+	protectedOwnerUuids = []
+	#Same as protectedOwnerUuids, but matched by player name instead -- easier to hand-edit, but breaks if the player changes their name. Use UUIDs above for anything long-term.
+	protectedOwnerNames = []
+	#Coordinate boxes where reinforced blocks stay 100% unbreakable regardless of owner -- for spawn or other areas that may not be "owned" by anyone in SecurityCraft's ownership sense. One entry per line, format "dimension;x1,y1,z1;x2,y2,z2" (corners in any order), e.g. "minecraft:overworld;-200,-64,-200;200,320,200" protects a 400x400 box around origin in the overworld. Malformed entries are logged and ignored, not an error.
+	protectedRegions = []

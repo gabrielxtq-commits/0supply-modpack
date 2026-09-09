@@ -1,0 +1,13 @@
+name = "Enchanted Vertical Slabs"
+filename = "enchanted-vertical-slabs-2.3.2-neoforge-mc1.21.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c79190277ac923f17b025bcfd438f704279cfd0d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6796088
+project-id = 559148

@@ -1,0 +1,18 @@
+#Ativa ou desativa o Mercado Rotativo.
+enabled = true
+#Intervalo, em horas, entre rotacoes automaticas do mercado.
+# Default: 24
+# Range: 1 ~ 720
+rotationHours = 24
+#Se verdadeiro, tags bloqueadas removem itens do sorteio.
+useTags = true
+#Se verdadeiro, o peso de cada item influencia sua chance de aparecer.
+useWeights = true
+#Se verdadeiro, o multiplicador de raridade influencia o sorteio.
+useRarity = true
+#Quantidade de rotacoes anteriores usada para penalizar itens repetidos.
+# Default: 10
+# Range: 0 ~ 100
+historySize = 10
+#Ativa os hologramas de texto (TextDisplay) acima de cada pedestal.
+holograms = true

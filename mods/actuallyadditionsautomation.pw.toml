@@ -1,0 +1,13 @@
+name = "Actually Additions Automation"
+filename = "actually-additions-automation-1.2.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ebccc31da7e74a4ef736356e8f641e29a719de9d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7465349
+project-id = 1421681

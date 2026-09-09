@@ -1,0 +1,150 @@
+#Soul Fracture effect configuration applied by Soul Great Sword attacks.
+#灵魂巨剑攻击附加碎魂效果的配置。
+[soul_fracture]
+	#Maximum level of Soul Fracture (1-5). Default 3.
+	#碎魂最高等级（1-5）。默认 3 级。
+	# Default: 3
+	# Range: 1 ~ 5
+	soulFractureMaxLevel = 3
+	#Duration of Soul Fracture effect (seconds). Default 10s.
+	#碎魂持续时间（秒）。默认 10 秒。
+	# Default: 10
+	# Range: > 0
+	soulFractureDurationSeconds = 10
+
+#Parry enhancement configuration for Soul Great Sword.
+#灵魂巨剑格挡强化配置
+[parry]
+	#Parry window duration (ticks). 20 ticks = 1 second. Default 10 = 0.5s.
+	#Set to 0 to disable parry (immediate cooldown on right-click).
+	#格挡判定窗口时长时长（ticks），20 tick = 1 秒。默认 10 = 0.5 秒。
+	#设为 0 表示空手右键立刻进入冷却，无法格挡。
+	# Default: 10
+	# Range: > 0
+	windowTicks = 10
+	#Item cooldown after a successful parry (ticks). Default 10 = 0.5s.
+	#格挡成功后的物品冷却时间（ticks）。默认 10 = 0.5 秒。
+	# Default: 10
+	# Range: > 0
+	successCooldownTicks = 10
+	#Item cooldown after a failed parry (ticks). Default 40 = 2s.
+	#格挡失败后的物品冷却时间（ticks）。默认 40 = 2 秒。
+	# Default: 40
+	# Range: > 0
+	failureCooldownTicks = 40
+	#If enabled, parry can block damage with 'bypasses invulnerability' or 'bypasses armor' tags. Default false.
+	#如果开启，格挡可以阻挡带有「无视无敌」或「穿甲」标签的伤害。默认关闭。
+	ignoreBypassTags = false
+	#Invulnerability frames after a successful parry (ticks). Default 0.5s. Set to 0 to disable.
+	#格挡成功后玩家无敌帧持续时间（ticks）。默认 10 = 0.5 秒。设为 0 关闭无敌帧。
+	# Default: 10
+	# Range: > 0
+	invulTicks = 10
+	#Damage types that can bypass parry invulnerability frames (backdoor).
+	#Format: ''minecraft:damage_type' or 'modid:damage_type'.
+	#Each value MUST be enclosed in quotes in lmaddons-commmon.toml!
+	#Default: empty list (invulnerability frames blocks all damage).
+	#可穿透格挡无敌帧的伤害类型（后门）。
+	#格式：'minecraft:伤害注册名' 或 '模组id:伤害注册名'
+	#配置文件中每个值必须用英文双引号包裹！
+	#默认：空列表（无敌帧阻挡所有伤害）。
+	invulBypassDamageTypes = []
+
+#Perfect parry reward configuration.
+#完美格挡奖励配置。
+[perfectParry]
+	#Perfect parry window (ticks). If the player parries within this duration after right-click, it counts as a perfect parry.
+	#Default 3 = 0.15s. Set to 0 to disable perfect parry.
+	#完美格挡判定窗口时长（ticks）。玩家右键后在此时长内受击并格挡成功，视为完美格挡。
+	#默认 3 = 0.15 秒。设为 0 则关闭完美格挡。
+	# Default: 3
+	# Range: > 0
+	perfectWindowTicks = 3
+	#Item cooldown after a perfect parry (ticks). Default 3 = 0.15s.
+	#完美格挡成功后的冷却时间（ticks）。默认 3 = 0.15 秒。
+	# Default: 3
+	# Range: > 0
+	perfectCooldownTicks = 3
+	#Perfect parry reward effects. Each entry format: 'potion_id;seconds;level'
+	#Each value MUST be enclosed in quotes in lmaddons-commmon.toml!
+	#Default: Speed I (minecraft:speed;5;1) and Strength I (minecraft:strength;5;1).
+	#完美格挡奖励的药水效果。每个条目格式："药水ID;秒;等级"。
+	#配置文件中每个值必须用英文双引号包裹！
+	#默认：速度 I（minecraft:speed;5;1）和力量 I（minecraft:strength;5;1）。
+	perfectEffects = ["minecraft:speed;5;1", "minecraft:strength;5;1"]
+
+#Soul Rage effect configuration granted on successful parry.
+#格挡成功附加灵魂之怒效果的配置
+[soul_rage]
+	#Duration of Soul Rage effect (seconds). Default 5s.
+	#灵魂之怒持续时间（秒）。默认 5 秒。
+	# Default: 5
+	# Range: > 0
+	soulRageDurationSeconds = 5
+	#Maximum level of Soul Rage (1-255). Default 1.
+	#灵魂之怒最高等级（1-255）。默认 1 级。
+	# Default: 1
+	# Range: 1 ~ 255
+	soulRageMaxLevel = 1
+
+#Soul Great Sword dagger skill configuration.
+#追踪幻影匕首技能配置。
+[dagger]
+	#Range (blocks) for the ray-target detection. Default 30.0.
+	#视线追踪的最大距离（格）。默认 30.0。
+	# Default: 30.0
+	# Range: 10.0 ~ 1.7976931348623157E308
+	rayRange = 30.0
+	#If enabled, daggers automatically seek the nearest entity instead of requiring line-of-sight.
+	#若开启，幻影匕首自动追踪最近实体，无需视线瞄准。
+	autoTarget = false
+	#Maximum range (blocks) for auto-targeting. Default 30.0.
+	#自动追踪的最大范围（格）。默认 30.0。
+	# Default: 30.0
+	# Range: 10.0 ~ 1.7976931348623157E308
+	autoTargetRange = 30.0
+	#Ratio of the target's hitbox height to aim at (0.0 = feet, 0.5 = mid-body, 1.0 = head). Default 0.5.
+	#瞄准高度系数。目标碰撞箱高度的比例（0.0 = 脚底，0.5 = 身体一半，1.0 = 头顶）。默认 0.5。
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	aimHeightRatio = 0.5
+	#Vertical tracking strength multiplier for phantom daggers. Higher values make daggers descend/ascend more quickly towards the target.
+	#Default 2.0. Set to 1.0 to keep original behavior.
+	#幻影匕首垂直追踪强度乘数。数值越高，匕首向目标俯冲/抬升的速度越快。
+	#默认 2.0。设为 1.0 则保持原版行为。
+	# Default: 2.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	verticalTrackingStrength = 2.0
+	#Horizontal tracking strength multiplier for phantom daggers. Default 2.0. Set to 1.0 to keep original behavior.
+	#幻影匕首水平追踪加速度乘数。默认 2.0。设为 1.0 则保持原版行为。
+	# Default: 2.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	horizontalTrackingStrength = 2.0
+	#Tracking phase duration for phantom daggers (ticks). Default 100 = 5s.
+	#幻影匕首追踪阶段持续时长（tick）。默认 100 = 5 秒。
+	# Default: 100
+	# Range: > 10
+	trackingDurationTicks = 100
+	#If enabled, phantom daggers heal the owner on hit. Default true.
+	#若开启，幻影匕首命中后为发射者回血。默认开启。
+	lifestealEnabled = true
+	#Heal amount = damage * this + targetMaxHP * maxHP ratio. Default 0.5.
+	#回血量 = 伤害 × 此值 + 目标最大生命 × 最大生命系数。默认 0.5。
+	# Default: 0.5
+	# Range: 0.0 ~ 10.0
+	lifestealFlatRatio = 0.5
+	#Heal amount = damage * flatRatio + targetMaxHP * this. Default 0.05 (5%).
+	#回血量 = 伤害 × 伤害系数 + 目标最大生命 × 此值。默认 0.05（5%）。
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	lifestealMaxHPRatio = 0.05
+	#Number of phantom daggers in ray-target mode. Default 6.
+	#视线追踪模式下幻影匕首的数量。默认 6。
+	# Default: 6
+	# Range: > 1
+	rayCount = 6
+	#Number of phantom daggers in auto-target mode. Default 6.
+	#自动追踪模式下幻影匕首的数量。默认 6。
+	# Default: 6
+	# Range: > 1
+	autoTargetCount = 6

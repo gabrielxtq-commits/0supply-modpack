@@ -1,0 +1,458 @@
+# Client-specific configuration for FTB Chunks
+# Modpack defaults should be defined in <instance>/config/ftbchunks-client.snbt
+#   (may be overwritten on modpack update)
+# Players may locally override this by copying into <instance>/local/ftbchunks-client.snbt
+#   (will NOT be overwritten on modpack update)
+
+{
+	advanced: {
+		# Enables debug info
+		# Default: false
+		debug_info: false
+		
+		# Advanced option. Change how often the minimap will refresh icons
+		# Default: 500
+		# Range: 0 ~ 10000
+		minimap_icon_update_timer: 500
+		
+		# Advanced option. How often map render update will be queued
+		# Default: 60
+		# Range: 1 ~ 600
+		rerender_queue_ticks: 60
+		
+		# Advanced option. Max tasks that can queue up
+		# Default: 100
+		# Range: 1 ~ 10000
+		task_queue_max: 100
+		
+		# Advanced option. How often queued tasks will run
+		# Default: 4
+		# Range: 1 ~ 300
+		task_queue_ticks: 4
+		memory: {
+			# When the large map is closed, auto-release least recently accessed regions down to this number (0 disables releasing)
+			# Default: 32
+			# Range: 0 ~ 2147483647
+			autorelease_on_map_close: 32
+			
+			# Constrain maximum map zoom-out based on number of explored regions and available memory
+			# Default: true
+			max_zoom_constraint: true
+			
+			# Periodically release region data for non-recently-used regions to save memory (units of seconds, 0 disables releasing
+			# Default: 300
+			# Range: 0 ~ 2147483647
+			region_release_time: 300
+		}
+	}
+	appearance: {
+		# Biome blend
+		# Default: "blend_5x5"
+		# Valid values: "none", "blend_3x3", "blend_5x5", "blend_7x7", "blend_9x9", "blend_11x11", "blend_13x13", "blend_15x15"
+		biome_blend: "blend_5x5"
+		
+		# Chunk grid overlay in large map
+		# Default: false
+		chunk_grid: false
+		
+		# Claim mode for the chunk claiming screen
+		# Default: "freehand"
+		# Valid values: "freehand", "rectangle", "circle"
+		claim_mode: "freehand"
+		
+		# Show claimed chunks on the map
+		# Default: true
+		claimed_chunks_on_map: true
+		
+		# Advanced option. Foliage darkness
+		# Default: 50
+		# Range: 0 ~ 255
+		foliage_darkness: 50
+		
+		# Advanced option. Grass darkness
+		# Default: 50
+		# Range: 0 ~ 255
+		grass_darkness: 50
+		
+		# Different ways to render map
+		# Default: "none"
+		# Valid values: "none", "night", "topography", "blocks", "light_sources"
+		map_mode: "none"
+		
+		# Noise added to map to make it look less plastic
+		# Default: 0.05
+		# Range: 0.0 ~ 0.5
+		noise: 0.05d
+		
+		# Only show entities that are on the surface
+		# Default: true
+		only_surface_entities: true
+		
+		# Show your own claimed chunks on the map
+		# Default: true
+		own_claimed_chunks_on_map: true
+		
+		# Reduces color palette to 256 colors
+		# Default: false
+		reduced_color_palette: false
+		
+		# Color intensity
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		saturation: 1.0d
+		
+		# Shadow intensity
+		# Default: 0.1
+		# Range: 0.0 ~ 0.3
+		shadows: 0.1d
+		
+		# How many blocks should height checks skip in water. 0 means flat water, ignoring terrain
+		# Default: 8
+		# Range: 0 ~ 128
+		water_height_factor: 8
+		
+		# Advanced option. Water visibility
+		# Default: 220
+		# Range: 0 ~ 255
+		water_visibility: 220
+	}
+	minimap: {
+		# Blurs minimap
+		# Default: "auto"
+		# Valid values: "auto", "on", "off"
+		blur_mode: "auto"
+		
+		# Adds NWSE compass inside minimap
+		# Default: true
+		compass: true
+		
+		# Enable minimap
+		# Default: false
+		enabled: false
+		
+		# Show entities on minimap
+		# Default: true
+		entities: true
+		
+		# Show entity heads on minimap
+		# Default: true
+		entity_heads: true
+		entity_icon: {
+			"born_in_chaos_v1:zombie_lumberjack": true
+			"minecraft:wolf": true
+			"mowziesmobs:ferrous_wroughtnaut": true
+			"naturalist:rat": true
+			"born_in_chaos_v1:mother_spider": true
+			"minecraft:tropical_fish": false
+			"born_in_chaos_v1:spirit_guide": true
+			"infernalexp:glowsilk_moth": true
+			"minecraft:creeper": true
+			"aquaculture:muskellunge": false
+			"born_in_chaos_v1:spiritof_chaos": true
+			"creeperoverhaul:bamboo_creeper": true
+			"undeadnights:elite_zombie": true
+			"born_in_chaos_v1:decrepit_skeleton": true
+			"naturalist:butterfly": true
+			"monsterplus:crystal_zombie": true
+			"minecraft:glow_squid": true
+			"naturalist:anglerfish": true
+			"born_in_chaos_v1:supreme_bonescaller_stage_2": true
+			"ars_nouveau:drygmy": true
+			"born_in_chaos_v1:glutton_fish": true
+			"pladailyboss:key_entity": true
+			"vampirism:blinding_bat": true
+			"born_in_chaos_v1:maggot": true
+			"born_in_chaos_v1:corpse_fly": true
+			"quark:forgotten": true
+			"born_in_chaos_v1:restless_spirit": true
+			"naturalist:ray": true
+			"mowziesmobs:umvuthana_raptor": true
+			"monsterplus:abyssologer": true
+			"minecraft:cow": true
+			"born_in_chaos_v1:door_knight_not_despawn": true
+			"born_in_chaos_v1:decaying_zombie": true
+			"creeperoverhaul:spruce_creeper": true
+			"ars_nouveau:alakarkinos": true
+			"minecraft:sheep": true
+			"naturalist:piranha": true
+			"born_in_chaos_v1:dread_hound": true
+			"creeperoverhaul:dripstone_creeper": true
+			"naturalist:ant": true
+			"naturalist:ostrich": true
+			"vampirism:vampire": true
+			"minecraft:wandering_trader": true
+			"naturalist:bear": true
+			"mowziesmobs:umvuthana_follower_raptor": true
+			"born_in_chaos_v1:lifestealer": true
+			"minecraft:spider": true
+			"born_in_chaos_v1:swarmer": true
+			"minecraft:zombie_villager": true
+			"minecraft:enderman": true
+			"minecraft:fox": true
+			"born_in_chaos_v1:siamese_skeletonsright": true
+			"ars_nouveau:whirlisprig": true
+			"naturalist:firefly": true
+			"naturalist:tiger": true
+			"born_in_chaos_v1:bonescaller": true
+			"born_in_chaos_v1:skeleton_demoman": true
+			"graveyard:reaper": true
+			"naturalist:black_bear": true
+			"born_in_chaos_v1:supreme_bonescaller": true
+			"aquaculture:red_grouper": false
+			"born_in_chaos_v1:zombie_clown": true
+			"minecraft:squid": true
+			"artifacts:mimic": true
+			"werewolves:werewolf_survivalist": true
+			"born_in_chaos_v1:zombie_bruiser": true
+			"minecraft:witch": true
+			"born_in_chaos_v1:barrel_zombie": true
+			"born_in_chaos_v1:siamese_skeletons": true
+			"minecraft:pig": true
+			"minecraft:cod": false
+			"born_in_chaos_v1:corpse_fish": true
+			"aquaculture:minnow": false
+			"ars_nouveau:starbuncle": true
+			"aquaculture:tuna": false
+			"naturalist:clam": true
+			"aquaculture:boulti": false
+			"minecraft:turtle": true
+			"minecraft:strider": true
+			"minecraft:piglin": true
+			"naturalist:starfish": true
+			"monsterplus:overgrown_skeleton": true
+			"aquaculture:smallmouth_bass": false
+			"aquaculture:catfish": false
+			"aquaculture:synodontis": false
+			"naturalist:snake": true
+			"monsterplus:lava_squid": true
+			"minecraft:silverfish": true
+			"born_in_chaos_v1:decaying_zombie_not_despawn": true
+			"undeadnights:horde_zombie": true
+			"minecraft:zombie": true
+			"aquaculture:atlantic_halibut": false
+			"vampirism:hunter": true
+			"monsterplus:ancient_hero": true
+			"creeperoverhaul:savannah_creeper": true
+			"minecraft:rabbit": true
+			"born_in_chaos_v1:dark_vortex": true
+			"aquaculture:bluegill": false
+			"born_in_chaos_v1:bloody_gadfly": true
+			"born_in_chaos_v1:dire_hound_leader": true
+			"naturalist:giraffe": true
+			"minecraft:bat": true
+			"endermanoverhaul:cave_enderman": true
+			"vampirism:advanced_vampire": true
+			"quark:stoneling": true
+			"born_in_chaos_v1:nightmare_stalker": true
+			"naturalist:deer": true
+			"born_in_chaos_v1:skeleton_thrasher": true
+			"naturalist:bass": true
+			"aquaculture:atlantic_herring": false
+			"creeperoverhaul:birch_creeper": true
+			"naturalist:elephant": true
+			"aquaculture:gar": false
+			"naturalist:crab": true
+			"naturalist:mole": true
+			"born_in_chaos_v1:baby_spider": true
+			"monsterplus:glow_skeleton": true
+			"quark:toretoise": true
+			"minecraft:cave_spider": true
+			"born_in_chaos_v1:baby_skeleton": true
+			"endermanoverhaul:savanna_enderman": true
+			"minecraft:drowned": true
+			"graveyard:ghoul": true
+			"monsterplus:demon_eye": true
+			"minecraft:hoglin": true
+			"born_in_chaos_fc:wither_scuttler": true
+			"creeperoverhaul:cave_creeper": true
+			"born_in_chaos_v1:siamese_skeletonsleft": true
+			"naturalist:blobfish": true
+			"minecraft:pufferfish": false
+			"born_in_chaos_fc:shy_spirit": true
+			"aquaculture:rainbow_trout": false
+			"minecraft:trader_llama": true
+			"born_in_chaos_v1:door_knight": true
+			"aquaculture:perch": false
+			"creeperoverhaul:ocean_creeper": true
+			"aquaculture:jellyfish": false
+			"evilcraft:vengeance_spirit": true
+			"born_in_chaos_v1:fallen_chaos_knight": true
+			"monsterplus:spectral_skull": true
+			"rottencreatures:undead_miner": true
+			"minecraft:axolotl": true
+			"born_in_chaos_v1:missioner": true
+			"graveyard:revenant": true
+			"friendsandfoes:mauler": true
+			"minecraft:cat": true
+			"naturalist:bird": true
+			"friendsandfoes:glare": true
+			"werewolves:werewolf_beast": true
+			"minecraft:skeleton": true
+			"aquaculture:bayad": false
+			"naturalist:snail": true
+			"naturalist:lizard": true
+			"born_in_chaos_v1:spirit_guide_assistant": true
+			"naturalist:duck": true
+			"aquaculture:carp": false
+			"minecraft:chicken": true
+			"born_in_chaos_v1:bone_imp_minion": true
+			"born_in_chaos_v1:baby_skeleton_minion": true
+			"undeadnights:demolition_zombie": true
+			"naturalist:jellyfish": true
+			"minecraft:slime": true
+			"naturalist:komodo_dragon": true
+			"forbidden_arcanus:lost_soul": true
+			"born_in_chaos_v1:phantom_creeper": true
+			"minecraft:dolphin": true
+			"graveyard:skeleton_creeper": true
+		}
+		
+		# Minimap font scaling (values not a multiple of 0.5 may look bad)
+		# Default: 0.5
+		# Range: 0.1 ~ 5.0
+		font_scale: 0.5d
+		
+		# Info hidden under minimap
+		# Default: ["ftbchunks:fps", "ftbchunks:game_time", "ftbchunks:real_time", "ftbchunks:debug"]
+		info_hidden: [
+			"ftbchunks:fps"
+			"ftbchunks:game_time"
+			"ftbchunks:real_time"
+			"ftbchunks:debug"
+		]
+		
+		# Info displayed under minimap
+		# Default: ["ftbchunks:player_pos", "ftbchunks:biome", "ftbchunks:zone", "ftbchunks:fps", "ftbchunks:game_time", "ftbchunks:real_time", "ftbchunks:debug"]
+		info_order: [
+			"ftbchunks:player_pos"
+			"ftbchunks:biome"
+			"ftbchunks:zone"
+			"ftbchunks:fps"
+			"ftbchunks:game_time"
+			"ftbchunks:real_time"
+			"ftbchunks:debug"
+		]
+		info_settings: { }
+		
+		# Entities in minimap will be larger
+		# Default: false
+		large_entities: false
+		
+		# Minimap will not rotate
+		# Default: true
+		locked_north: true
+		
+		# Show player heads on minimap
+		# Default: true
+		player_heads: true
+		
+		# Mode for the pointer icon to render on full screen minimap
+		# Default: "both"
+		# Valid values: "face", "pointer", "both"
+		pointer_icon_mode: "both"
+		
+		# Mode for the pointer icon to render on minimap
+		# Default: "both"
+		# Valid values: "face", "pointer", "both"
+		pointer_icon_mode_minimap: "both"
+		
+		# Enables minimap to show up in corner
+		# Default: "top_right"
+		# Valid values: "bottom_left", "left", "top_left", "top_right", "right", "bottom_right"
+		position: "top_right"
+		
+		# Applied a conditional check to the offset. When set to anything other that None, the offset will apply only to the selected minimap position.
+		# When set to none and the maps offset is greater than 0, the offset will apply to all directions
+		# Default: "none"
+		# Valid values: "bottom_left", "left", "top_left", "top_right", "right", "bottom_right", "none"
+		position_offset_condition: "none"
+		
+		# Changes the maps X offset from it's origin point. When on the Left, the map will be pushed out from the left, then from the right when on the right.
+		# Default: 0
+		# Range: -∞ ~ +∞
+		position_offset_x: 0
+		
+		# Changes the maps X offset from it's origin point. When on the Left, the map will be pushed out from the left, then from the right when on the right.
+		# Default: 0
+		# Range: -∞ ~ +∞
+		position_offset_y: 0
+		
+		# Size minimap proportional to screen width (and scale)
+		# Default: true
+		proportional: true
+		
+		# Draw reticle lines on minimap
+		# Default: true
+		reticle: true
+		
+		# Scale of minimap
+		# Default: 1.0
+		# Range: 0.25 ~ 4.0
+		scale: 1.0d
+		
+		# Always show player on minimap, even when rotation not locked
+		# Default: true
+		show_player_when_unlocked: true
+		
+		# Draw a square minimap instead of a circular one
+		# Default: false
+		square: false
+		
+		# Show text above minimap
+		# Default: false
+		text_above_minimap: false
+		
+		# Minimap visibility
+		# Default: 255
+		# Range: 0 ~ 255
+		visibility: 255
+		
+		# Show waypoints on minimap
+		# Default: true
+		waypoints: true
+		
+		# Zoom distance of the minimap
+		# Default: 1.0
+		# Range: 1.0 ~ 4.0
+		zoom: 2.0d
+	}
+	waypoints: {
+		# Automatically remove death waypoints if closer than this many blocks away (distance of 0 disables removal)
+		# Default: 0
+		# Range: 0 ~ 2147483647
+		death_waypoint_autoremove_distance: 0
+		
+		# Enables creation of death waypoints
+		# Default: true
+		death_waypoints: true
+		
+		# Show waypoints in world
+		# Default: true
+		in_world_waypoints: true
+		
+		# Minimum distance before waypoint dots start to fade
+		# Default: 1.0
+		# Range: 1.0 ~ 200.0
+		waypoint_dot_fade_distance: 1.0d
+		
+		# Minimum distance before waypoint beacons start to fade
+		# Default: 12.0
+		# Range: 1.0 ~ 200.0
+		waypoint_fade_distance: 12.0d
+		
+		# How close player crosshair needs to be to in-world waypoints to show waypoint labels
+		# Default: 1.0
+		# Range: 1.0 ~ 10.0
+		waypoint_focus_distance: 1.0d
+		
+		# How much do in-world waypoints enlarge when the player crosshair is close
+		# Default: 2.0
+		# Range: 1.0 ~ 10.0
+		waypoint_focus_scale: 2.0d
+		
+		# Maximum distance at which waypoints are drawn
+		# Default: 5000.0
+		# Range: 1.0 ~ 2.147483647E9
+		waypoint_max_distance: 5000.0d
+	}
+}

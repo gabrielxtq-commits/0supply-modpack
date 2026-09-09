@@ -1,0 +1,13 @@
+name = "Agritech (AT2)"
+filename = "agritechtwo-1.1.0.2+mc-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "28c2a9d5b144219d1963c5227c75764e06bab649"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8387398
+project-id = 1485550

@@ -1,0 +1,13 @@
+name = "Born in Chaos: Forgotten Content"
+filename = "born_in_chaos_fc-v1.2.0-1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "580d8db9e3f9188f65ae7184a09a712cb4a3723b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7938430
+project-id = 1023080

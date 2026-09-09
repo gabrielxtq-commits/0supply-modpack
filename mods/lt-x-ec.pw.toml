@@ -1,0 +1,13 @@
+name = "Legendary Tooltips x Equipment Compare"
+filename = "ltxec-neoforge-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "10b89837d7031ddf65543f621a58092795e3bc9d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8247396
+project-id = 1463769

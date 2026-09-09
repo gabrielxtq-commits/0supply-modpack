@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "industrialforegoing:machine_frame_simple"
+    }
+  ],
+  "type": "industrialforegoing:dissolution_chamber",
+  "input": [
+    { "tag": "c:plastics" },
+    { "tag": "industrialforegoing:machine_frame/pity" },
+    { "tag": "c:plastics" },
+    { "item": "minecraft:nether_brick" },
+    { "item": "minecraft:nether_brick" },
+    { "tag": "c:ingots/iron" },
+    { "tag": "c:gears/gold" },
+    { "tag": "c:ingots/iron" },
+    { "item": "ae2:certus_quartz_crystal" }
+  ],
+  "inputFluid": {
+    "amount": 250,
+    "fluid": "industrialforegoing:latex"
+  },
+  "output": {
+    "count": 1,
+    "id": "industrialforegoing:machine_frame_simple"
+  },
+  "processingTime": 300
+}

@@ -1,0 +1,171 @@
+[spawning]
+	#Probability (0–1) that an eligible mob becomes a champion on spawn
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	spawnChance = 0.1
+	#Radius around an active beacon where no champions spawn. 0 = disabled
+	# Default: 64
+	# Range: 0 ~ 1000
+	beaconProtectionRange = 64
+	#Allow mobs from vanilla spawner blocks to become champions
+	championSpawners = false
+	#Allow mobs from trial spawner blocks to become champions
+	championTrialSpawners = false
+
+[hud]
+	#Show champion HUD when looking at a champion
+	showHud = true
+	#Show coloured rank particles around champions
+	showParticles = true
+	#Entity IDs whose HUD overlay is suppressed
+	bossBarBlacklist = ["minecraft:ender_dragon", "minecraft:wither"]
+
+[growth]
+	#Bonus XP multiplier per tier level above 1
+	# Default: 1
+	# Range: > 0
+	experienceGrowth = 1
+	#Explosion radius growth multiplier
+	# Default: 2
+	# Range: 0 ~ 100
+	explosionGrowth = 2
+
+[loot]
+	#Loot drop entries: tier;modid:item;amount;enchanted;weight
+	lootDrops = ["1;minecraft:iron_ingot;1;false;10", "2;minecraft:gold_ingot;1;false;8", "3;minecraft:diamond;1;false;5", "3;minecraft:emerald;1;false;4", "4;minecraft:diamond;2;true;4", "5;minecraft:netherite_scrap;1;false;2", "5;minecraft:diamond;3;true;3"]
+	#Scale number of loot draws to tier level
+	lootScaling = true
+
+[mobSplit]
+	#Allow slime-like mobs to inherit champion status when splitting
+	mobInherit = false
+	#Rank reduction applied to child mobs when splitting
+	# Default: 1
+	# Range: > 0
+	rankReduce = 1
+	#Allow child mobs from splits to have the Infested affix
+	canHaveInfestedAffix = false
+
+	[affixes.adaptable]
+		# Default: 0.15
+		# Range: 0.0 ~ 1.0
+		reductionIncrement = 0.15
+		# Default: 0.9
+		# Range: 0.0 ~ 1.0
+		maxReduction = 0.9
+
+	[affixes.arctic]
+		# Default: 3
+		# Range: 1 ~ 100
+		attackInterval = 3
+
+	[affixes.dampening]
+		# Default: 0.3
+		# Range: 0.0 ~ 1.0
+		reduction = 0.3
+
+	[affixes.desecrating]
+		# Default: 3
+		# Range: > 1
+		interval = 3
+		# Default: 1
+		# Range: > 0
+		activationTime = 1
+		# Default: 4.0
+		# Range: 1.0 ~ 32.0
+		radius = 4.0
+		# Default: 10
+		# Range: > 1
+		duration = 10
+
+	[affixes.enkindling]
+		# Default: 3
+		# Range: 1 ~ 100
+		attackInterval = 3
+
+	[affixes.hasty]
+		# Default: 0.25
+		# Range: 0.0 ~ 10.0
+		speedBonus = 0.25
+
+	[affixes.infested]
+		# Default: 2
+		# Range: 1 ~ 100
+		amount = 2
+		# Default: 10
+		# Range: 1 ~ 600
+		interval = 10
+		parasite = "minecraft:silverfish"
+
+	[affixes.knocking]
+		# Default: 5.0
+		# Range: 0.0 ~ 100.0
+		knockback = 5.0
+
+	[affixes.lively]
+		# Default: 1.0
+		# Range: 0.0 ~ 100.0
+		healAmount = 1.0
+		# Default: 5.0
+		# Range: 1.0 ~ 100.0
+		passiveMultiplier = 5.0
+		# Default: 3
+		# Range: 1 ~ 600
+		cooldown = 3
+
+	[affixes.magnetic]
+		# Default: 0.8
+		# Range: 0.0 ~ 10.0
+		strength = 0.8
+		# Default: 16.0
+		# Range: 1.0 ~ 64.0
+		pullRange = 16.0
+
+	[affixes.molten]
+		# Default: 80
+		# Range: 1 ~ 2000
+		fireTicks = 80
+		# Default: 2.0
+		# Range: 0.0 ~ 100.0
+		auraDamage = 2.0
+		# Default: 3.0
+		# Range: 0.5 ~ 32.0
+		auraRange = 3.0
+
+	[affixes.paralyzing]
+		# Default: 0.2
+		# Range: 0.0 ~ 1.0
+		chance = 0.2
+		# Default: 60
+		# Range: 1 ~ 1200
+		duration = 60
+
+	[affixes.plagued]
+		# Default: 5.0
+		# Range: 1.0 ~ 32.0
+		range = 5.0
+
+	[affixes.reflective]
+		# Default: 0.1
+		# Range: 0.0 ~ 1.0
+		minPercent = 0.1
+		# Default: 0.35
+		# Range: 0.0 ~ 1.0
+		maxPercent = 0.35
+		# Default: 8.0
+		# Range: 0.0 ~ 10000.0
+		max = 8.0
+		lethal = false
+
+	[affixes.shielding]
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		chance = 0.5
+
+	[affixes.wounding]
+		# Default: 0.4
+		# Range: 0.0 ~ 1.0
+		chance = 0.4
+		# Default: 200
+		# Range: 1 ~ 6000
+		duration = 200
