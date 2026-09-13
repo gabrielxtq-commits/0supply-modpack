@@ -3373,6 +3373,10 @@ file = "mods/ExtremeReactors2-CreateCompat-1.21.1-1.0.4.jar"
 hash = "a6f4dfa81df77908118cf907bce192d93b6bfc96a7b18cb45470133137e98a23"
 
 [[files]]
+file = "mods/Mine Frame Gen-neoforge-1.21.1-1.1.0.jar"
+hash = "757478cf4b55747f2cba2affb0b492d4b974098384a87ceecd1ebc2aff458c9e"
+
+[[files]]
 file = "mods/PresenceFootsteps-1.21.1-1.12.0-beta.1-1.21NeoForge.jar"
 hash = "ded9ea8677f407cbf280b0ee33866ae70859a7c476ef0f60fd35a9be2ee9b91a"
 
