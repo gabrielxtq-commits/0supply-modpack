@@ -4592,16 +4592,6 @@ hash = "af6b190e42b601eb0e2ca6fd58209f0242ab8c403996f1814956a6699dcd4f86"
 metafile = true
 
 [[files]]
-file = "mods/map-atlases-forge.pw.toml"
-hash = "822a44623330cccc59fb2e86cfbcd15fcba3410f88c21db03ecbb56fc5ef82e2"
-metafile = true
-
-[[files]]
-file = "mods/map-atlases-waystones-compatibility.pw.toml"
-hash = "a523fa61ecdcba142570c2c851bbe6a1ee9905baf01fa51f16f8d779e45d5faa"
-metafile = true
-
-[[files]]
 file = "mods/marvel-superheroes.pw.toml"
 hash = "ddb96989ed211e926f0763a89ba51a3ea4ab0da8930cb70bc9b5cb6a331a95ff"
 metafile = true
