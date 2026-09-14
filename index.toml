@@ -4086,26 +4086,6 @@ file = "mods/economy-0.1.0.jar"
 hash = "d1c931fbc53551e965c89f16b28d7734443f1845aca31e9ce0b7269c8ddf83a2"
 
 [[files]]
-file = "mods/emi-enchanting.pw.toml"
-hash = "9237b88b063c87c5f4b5a79c5ff8a7c287537f3deabe04027efee8298ac380dd"
-metafile = true
-
-[[files]]
-file = "mods/emi-loot.pw.toml"
-hash = "2bfe1523d89098c72c7072531f60eb24c6b41fea2ee294bfcb86c3c385464c08"
-metafile = true
-
-[[files]]
-file = "mods/emi.pw.toml"
-hash = "8491436f99726aff4cd90644496679665f910b51822d9aac38401d0c70dfc61a"
-metafile = true
-
-[[files]]
-file = "mods/emiffect-status-effects-emi-plugin.pw.toml"
-hash = "08b5fe6bbf5980820af8addc37e5ee41e48756400d86f9f554222f27b3ccecb5"
-metafile = true
-
-[[files]]
 file = "mods/emotecraft-forge.pw.toml"
 hash = "41da9deeec5e9e6f3369f890a9f459d3dae3edf59c7072cb7c5dd26b953bf7d7"
 metafile = true
