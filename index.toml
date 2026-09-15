@@ -3405,6 +3405,11 @@ hash = "b06a5cb7937cb5f8ad2780cd4008b56fd737ff7ac5cf9763c2804d1f5a81c0d6"
 metafile = true
 
 [[files]]
+file = "mods/ae2-jei-integration.pw.toml"
+hash = "491974dc6adba0e893fb755f55dfe833a1076ba49fdf9e4f92b8b9fa069ce9b5"
+metafile = true
+
+[[files]]
 file = "mods/agritech-evolved.pw.toml"
 hash = "5e616435689a0803e7a52f55cea53b45d275740d2314fea07140e8d299d95771"
 metafile = true
