@@ -4478,6 +4478,11 @@ hash = "1506a3d749a45bc760b3ad57ef1fbb959f0c166b6d1d4955114fd66db7a4855d"
 metafile = true
 
 [[files]]
+file = "mods/krypton-fnp.pw.toml"
+hash = "5a96006110f4cdd98460a994373153909a5f0bf6cb68c5ac3a64adbda86eb302"
+metafile = true
+
+[[files]]
 file = "mods/legendary-monsters.pw.toml"
 hash = "793ada5ad6af4ea3604003c663f24ac8c3ee06b7e7ea149ad72e7a498bac421a"
 metafile = true
@@ -4738,6 +4743,11 @@ hash = "a8705202193813de291195ad6bbd03101c4ddc1ab2878aadb018ab92f903999f"
 [[files]]
 file = "mods/nullscape.pw.toml"
 hash = "c183fb8843a6c04da0417e5d51c62b2def40b994f0e9f1176243877b104d88a8"
+metafile = true
+
+[[files]]
+file = "mods/observable.pw.toml"
+hash = "00fb150ec4389dbe540bcede8ac3b6e34677f5bf3e3454732d311b7e44569d63"
 metafile = true
 
 [[files]]
