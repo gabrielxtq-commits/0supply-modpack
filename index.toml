@@ -4942,7 +4942,7 @@ metafile = true
 
 [[files]]
 file = "mods/rust-0.1.0.jar"
-hash = "8a4573c3192796af3908682f2e43f3ce31f8322f3ffc999a58e4b99e14bfc4f0"
+hash = "7cd2cabb451d9b5746b675e3ae7029d48e72ce9cb8673f54e8570f907986b8ba"
 
 [[files]]
 file = "mods/searchables.pw.toml"
@@ -5319,9 +5319,17 @@ hash = "f60046584d023aaa0af0e8a1f3f021acb13121f2130f7c66b85e704da4d72643"
 metafile = true
 
 [[files]]
+file = "mods/zerovips-0.1.0.jar"
+hash = "b57f9a2fd87f936a927db2af5af5c8f01eacba18b1b1adc7c9df1bce5d23f1f9"
+
+[[files]]
 file = "mods/zeta.pw.toml"
 hash = "d1baffd370868590fcb2785146c278df5781d20994022749c53c0f9b2bffc7fc"
 metafile = true
+
+[[files]]
+file = "resourcepacks/0supply-traducao-relics-pt-br.zip"
+hash = "5eabb4f316b7f901f22567cbc5c0446222c824afbf4013a9e58f70e91fd4e06c"
 
 [[files]]
 file = "scripts/01_early_crosslinks.zs"
