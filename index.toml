@@ -4942,7 +4942,7 @@ metafile = true
 
 [[files]]
 file = "mods/rust-0.1.0.jar"
-hash = "7cd2cabb451d9b5746b675e3ae7029d48e72ce9cb8673f54e8570f907986b8ba"
+hash = "f8d51ef44c47fff8916b6d0750a6f8083f9f82880b3993bca75663f1a4d220f9"
 
 [[files]]
 file = "mods/searchables.pw.toml"
@@ -4950,9 +4950,8 @@ hash = "6c0fac550bb053ee2728144a28819835823dcc6d04ad7897750431fe55100e53"
 metafile = true
 
 [[files]]
-file = "mods/security-craft.pw.toml"
-hash = "6da6b2be309785e5ab8e575010b4f30d66a717ace60b10748271333c09aba523"
-metafile = true
+file = "mods/security-craft-1.10.2.1-rust-patch.jar"
+hash = "a616b448f6e7a29d134364c271d44e0c7324e4085bef01fdb27d9ce2901dd6ed"
 
 [[files]]
 file = "mods/selene.pw.toml"
